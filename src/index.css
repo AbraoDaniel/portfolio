@@ -455,7 +455,6 @@ body {
   height: 100vh;
   padding: 0 60px;
   .contact-image {
-    background-color: red;
     background: url('public/daniel-bg.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -540,6 +539,50 @@ body {
     }
   }
   margin-bottom: 100px;
+  .contact-cards {
+    margin-top: 20px;
+    padding: 2px;
+    .contact-card{
+      cursor: pointer;
+      background-color: rgba(22, 22, 22, 0.725);
+      border: 1px solid var(--default-border-color);
+      width: 100%;
+
+      
+
+      .info {
+        padding: 15px 5px;
+        display: flex;
+        align-items: center;
+        svg {
+          color: var(--default-text-color) !important;
+          width: 25px;
+        }
+        .media-name {
+          font-family: 'Inter', sans-serif;
+          margin-left: 10px;
+          font-weight: 350;
+          font-size: 14px;
+          color: var(--default-text-color);
+        }
+      }
+
+      .media-arrow {
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in-out;
+        color: var(--default-text-color);
+        margin-right: 5px;
+      }
+
+      .media-arrow.hovered {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .contact-card:hover {
+      background-color: rgba(27, 27, 27, 0.725);
+    }
+  }
 }
 
 
