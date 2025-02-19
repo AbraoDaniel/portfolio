@@ -2,8 +2,9 @@ import { BrowserRouter as Router} from "react-router-dom";
 import AppRoutes from './AppRoutes'
 import { Layout } from "antd";
 import PageHeader from "./components/PageHeader";
+import MainFooter from "./components/MainFooter";
 
-const { Footer, Content } = Layout;
+const { Content } = Layout;
 
 const App: React.FC = () => {
   return (
@@ -13,9 +14,7 @@ const App: React.FC = () => {
         <Content style={{flex: 1 }}>
           <AppRoutes />
         </Content>
-        <Footer className="page-footer" >
-          Danti ©{new Date().getFullYear()} Created by Daniel A. Abrão
-        </Footer>
+        <MainFooter />
       </Layout>
     </Router>
   )

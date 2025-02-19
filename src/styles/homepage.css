@@ -1,0 +1,248 @@
+.presentation-page {
+  background: url('public/daniel-bg.png');
+  background-repeat: no-repeat;
+  background-size: 650px;
+  background-position: center;
+  animation: floatBackground 3s ease-in-out infinite;
+}
+
+.presentation-text {
+  font-size: 128px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: var(--default-text-color);
+  font-weight: 250;
+}
+
+.presentation-subtext {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: var(--default-text-color);
+  white-space: break-spaces;
+  font-weight: 150;
+}
+
+.section-row {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 1s ease-in-out;
+}
+
+.section-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+
+.specialities-card {
+  margin-left: 15px;
+  margin-top: 80px;
+  border-radius: 0;
+  background-color: var(--lighter-default-background-color);
+  border: 1px solid var(--default-border-color);
+  padding: 5px 10px;
+  .card-number {
+    color: var(--default-secondary-text-color);
+    font-size: 16px;
+    font-weight: 250;
+  }
+  .card-title {
+    color: var(--default-text-color);
+    font-size: 20px;
+    font-weight: 250;
+  }
+  .card-text {
+    color: var(--default-secondary-text-color);
+    font-size: 14px;
+    font-weight: 250;
+    margin-top: 10px;
+  }
+  .card-redirect {
+    color: var(--default-text-color);
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .card-redirect:hover {
+    color: white;
+  }
+
+  .card-number, .card-title, .card-text, .card-redirect {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.slider {
+	height: 50px;
+	margin: auto;
+	overflow:hidden;
+  align-items: center;
+	position: relative;
+	width: 70%;
+	
+	&::before,
+	&::after {
+		background: linear-gradient(to right,  var(--default-background-color) 0%,rgba(255,255,255,0) 100%);
+		content: "";
+		height: 50px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll 30s linear infinite;
+		display: flex;
+    align-items: center;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+    svg {
+      height: 40px;
+      width: 150px;
+      color: var(--default-text-color);
+    }
+	}
+}
+
+.projects-section.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.projects-section {
+  padding: 0px 40px;
+  margin-left: 15px;
+  margin-top: 100px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  transform: translateY(200px);
+
+  .projects-title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 250;
+    color: var(--default-text-color);
+  }
+  .project-card {
+    background-color: var(--lighter-default-background-color);
+    border: 1px solid var(--default-border-color);
+    padding: 0;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    border-radius: 0;
+    height: 400px;
+    cursor: pointer;
+
+    .ant-card-body {
+      padding: 0
+    }
+    .product-image {
+      width: 100%;
+      height: 330px;
+    }
+    .project-redirect-button{
+      position: relative;
+      bottom: 100px;
+      left: 50%;
+      border-radius: 25px;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      svg {
+        width: 20px;
+        color: var(--default-text-color);
+      }
+      transform: rotate(45deg);
+      background-color: var(--lighter-default-background-color);
+      border: 1px solid var(--default-border-color);
+      backdrop-filter: blur(15px);
+      opacity: 0;
+      will-change: transform;
+    }
+    .project-redirect-button.hovered{
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    .project-redirect-button:hover {
+      background-color: var(--lighter-default-background-color);
+      border: 1px solid var(--default-border-color);
+    }
+    
+    .project-description {
+      width: 560px;
+      height: 60px;
+      margin-bottom: 20px;
+      padding: 0px 20px;
+      backdrop-filter: blur(30px);
+      opacity: 1;
+      background-color: var(--lighter-default-background-color);
+      border: 1px solid var(--default-border-color);
+      backdrop-filter: blur(15px);
+      transition: transform 0.3s ease-in-out; 
+      display: flex;
+      align-items: center;
+
+      .project-text {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .project-subtext {
+        font-size: 12px;
+        font-weight: 350;
+      }
+      
+      .project-text, .project-subtext {
+        color: var(--default-text-color);
+        font-family: 'Inter', sans-serif;
+      }
+
+    }
+  }
+
+  .project-redirect-all-button{
+    background-color: var(--default-background-color);
+    border: 1px solid var(--default-border-color);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+    color: var(--default-text-color);
+    cursor: pointer;
+
+  }
+  
+
+  .project-redirect-all-button.hovered{
+    transform: rotate(45deg);
+    background-color: var(--lighter-default-background-color);
+  }
+
+  .redirect-all-text{
+    font-family: 'Inter', sans-serif;
+    color: var(--default-text-color);
+    margin-left: 10px;
+    margin-right: 20px;
+    font-weight: 200;
+    cursor: pointer;
+  }
+}

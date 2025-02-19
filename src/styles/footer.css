@@ -1,0 +1,78 @@
+.page-footer {
+  text-align: center;
+  background-color: var(--lighter-default-background-color);
+  color: var(--default-text-color);
+  height: 400px;
+  margin-top: 100px;
+
+  .first-column-footer:hover {
+    svg {
+      color: white
+    }
+    .media-name {
+      color: white;
+      font-weight: 400;
+    }
+  }
+
+  .daniel-name {
+    justify-content: center;
+    cursor: pointer;
+    
+    .name {
+      font-size: 35px;
+      font-family: 'Zain', 'Inter', sans-serif;
+      color: var(--default-text-color) !important;
+      margin-bottom: 20px;
+    }
+    .footer-icon {
+      margin-right: 5px;
+      background-color: var(--lighter-default-background-color);
+      border: 1px solid var(--default-border-color);
+      margin-bottom: 10px;
+      display: flex;
+      width: 40px;
+      height: 40px;
+      border-radius: 30px;
+      align-items: center;
+      justify-content: center;
+  
+      svg {
+        width: 20px;
+        margin-top: 5px;
+      }
+    }
+    .media-name {
+      color: var(--default-text-color);
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      margin-bottom: 10px;
+      font-weight: 250;
+    }
+  }
+  .footer-pages-title {
+    justify-content: center;
+    
+    .name {
+      font-size: 20px;
+      font-family: 'Inter', sans-serif;
+      color: var(--default-text-color) !important;
+      margin-bottom: 40px;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+    .media-name {
+      color: var(--default-text-color);
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      margin-bottom: 10px;
+      font-weight: 250;
+      cursor: pointer;
+      text-align: start;
+    }
+    .media-name:hover {
+      color: white;
+      font-weight: 400;
+    }
+  }
+}

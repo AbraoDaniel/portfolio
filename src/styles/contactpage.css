@@ -1,0 +1,135 @@
+.contact-wrapper {
+  height: 100vh;
+  padding: 0 60px;
+  animation: showing 1s ease-in-out normal;
+  .contact-image {
+    background: url('public/daniel-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 450px;
+    animation: floatImageContact 3s ease-in-out infinite;
+    height: 100%;
+  }
+  .contact-form {
+    background-color: rgba(22, 22, 22, 0.725);
+    border: 1px solid var(--default-border-color);
+    padding: 40px 50px;
+    width: 100%;
+    margin-right: 200px;
+    height: 75%;
+    
+
+    .contact-form-title {
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: 150;
+    }
+
+    .contact-form-subtitle {
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: 250;
+    }
+
+    .contact-form-title, .contact-form-subtitle {
+      font-family: 'Inter', sans-serif; 
+      color: var(--default-text-color);
+    }
+    
+    .input-form {
+      border-radius: 0;
+      border: none;
+      background-color: var(--lighter-default-background-color);
+      height: 50px;
+      color: var(--default-text-color);
+    }
+    .input-form::placeholder {
+      color: var(--default-secondary-text-color)
+    }
+    .input-form:focus {
+      border: 1px solid var(--default-border-color);
+      box-shadow: none;
+    }
+
+    .textarea-form {
+      background-color: var(--lighter-default-background-color);
+      border: none;
+      .ant-input-data-count {
+        color: var(--default-text-color)
+      }
+    }
+    .ant-input-affix-wrapper {
+      color: var(--default-text-color)
+    }
+
+    .send-button {
+      width: 100%;
+      margin-top: 20px;
+      height: 40px;
+      background-color: var(--default-background-color);
+      border: 1px solid var(--default-border-color);
+      .send-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        color: var(--default-text-color);
+      }
+      .send-icon {
+        font-size: 18px;
+        color: var(--default-text-color);
+      }
+      .send-icon.hovered {
+        animation: fly 3s linear normal;
+      }
+    }
+
+    .send-button:hover {
+      background-color: var(--lighter-default-background-color);
+      border: 1px solid var(--default-border-color);
+    }
+  }
+  margin-bottom: 100px;
+  .contact-cards {
+    margin-top: 20px;
+    padding: 2px;
+    .contact-card{
+      cursor: pointer;
+      background-color: rgba(22, 22, 22, 0.725);
+      border: 1px solid var(--default-border-color);
+      width: 100%;
+
+      
+
+      .info {
+        padding: 15px 5px;
+        display: flex;
+        align-items: center;
+        svg {
+          color: var(--default-text-color) !important;
+          width: 25px;
+        }
+        .media-name {
+          font-family: 'Inter', sans-serif;
+          margin-left: 10px;
+          font-weight: 350;
+          font-size: 14px;
+          color: var(--default-text-color);
+        }
+      }
+
+      .media-arrow {
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in-out;
+        color: var(--default-text-color);
+        margin-right: 5px;
+      }
+
+      .media-arrow.hovered {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .contact-card:hover {
+      background-color: rgba(27, 27, 27, 0.725);
+    }
+  }
+}

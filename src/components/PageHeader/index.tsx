@@ -1,24 +1,17 @@
 import { Col, Layout, Menu, Row, Typography } from "antd";
 import { useNavigate } from "react-router-dom";
+import { pageItems } from "../../util/generalFields";
 
 const { Header } = Layout;
 
 const PageHeader: React.FC = () => {
   const navigate = useNavigate()
-  const items = [
-    {key: 'projects', label: 'PROJETOS'},
-    {key: 'work', label: 'CARREIRA'},
-    {key: 'about', label: 'SOBRE'},
-    {key: 'github', label: 'GITHUB'},
-    {key: 'contacts', label: 'CONTATOS'},
-  ]
-
   function handleClickToRedirect(value: string) {
     if (value !== 'github') {
       return navigate(value)
     }
 
-    alert('a')
+    window.open('https://github.com/AbraoDaniel', '_blank')
   }
 
   return (
@@ -37,7 +30,7 @@ const PageHeader: React.FC = () => {
             onClick={(value) => {
               handleClickToRedirect(value?.key)
             }}
-            items={items}
+            items={pageItems}
           />
         </Col>
       </Row>

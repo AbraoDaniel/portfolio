@@ -29,3 +29,16 @@ export const mediaContacts = [
   {label: 'GMAIL', icon: <GmailIcon />, link: 'mailto:danabrao@gmail.com'},
   {label: 'WHATSAPP', icon: <WhatsappIcon />, link: 'https://wa.me/5547984894797'},
 ]
+
+export const pageItems = [
+  {key: 'projects', label: 'PROJETOS'},
+  {key: 'work', label: 'CARREIRA'},
+  {key: 'about', label: 'SOBRE'},
+  {key: 'github', label: 'GITHUB'},
+  {key: 'contacts', label: 'CONTATOS'},
+]
+
+export const usefullLinks = [
+  {key: 'https://drive.google.com/drive/u/3/folders/1eplWIyJCZ26FlN7W7MrH-R3r2yJo-q87', label: 'CERTIFICADOS'},
+  {key: 'https://abraodaniel.github.io/e-commerce/', label: 'DANTI SHOP DEMO'},
+]

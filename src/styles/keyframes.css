@@ -1,0 +1,54 @@
+@keyframes floatBackground {
+  0% {
+    background-position: center -100px;
+  }
+  50% {
+    background-position: center -80px;
+  }
+  100% {
+    background-position: center -100px;
+  }
+}
+
+@keyframes floatImageContact {
+  0% {
+    background-position: center 60px;
+  }
+  50% {
+    background-position: center 50px;
+  }
+  100% {
+    background-position: center 60px;
+  }
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+  30% {
+    transform: translateX(30px) translateY(-5px) rotate(-15deg); /* Avança e inclina um pouco */
+  }
+  60% {
+    transform: translateX(80px) translateY(-20px) rotate(-10deg); /* Continua subindo */
+  }
+  100% {
+    transform: translateX(300px) translateY(-50px) rotate(-10deg); /* Sobe suavemente e endireita */
+  }
+}
+
+@keyframes showing {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
