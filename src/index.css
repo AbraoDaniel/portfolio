@@ -3,6 +3,8 @@
 @import "./styles/keyframes.css";
 @import "./styles/mainheader.css";
 @import "./styles/homepage.css";
+@import "./styles/message.css";
+@import "./styles/projectspage.css";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -20,10 +22,12 @@
   -moz-osx-font-smoothing: grayscale;
 
   --default-background-color: #0E0E0E;
+  --message-background-color: #161616;
   --default-text-color: #DAC5A7; 
   --default-secondary-text-color: #DAC5A799;
   --default-border-color: rgba(255, 255, 255, 0.219);
   --lighter-default-background-color: rgba(218, 197, 167, 0.05);
+  --success-color: rgba(0, 173, 0, 0.74);
 }
 
 html,
@@ -82,4 +86,8 @@ body {
 	display: flex;
 	height: 100vh;
 	justify-content: center;
+}
+
+.ant-typography {
+  font-family: 'Inter', sans-serif;
 }

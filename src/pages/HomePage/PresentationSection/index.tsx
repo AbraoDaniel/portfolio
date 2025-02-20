@@ -9,7 +9,7 @@ const PresentationSection: React.FC = () => {
           <Typography.Text className="presentation-text">
             {"Desenvolvedor"}
             <br/>
-            {"Fullstack"}
+            {"Frontend"}
           </Typography.Text>
         </Col>
         <Col xs={24} style={{display: 'flex', justifyContent: 'center'}}>

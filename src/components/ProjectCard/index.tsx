@@ -1,6 +1,7 @@
 import { Button, Card, Row, Typography } from "antd"
 import {  useState } from "react"
 import { MdArrowOutward } from "react-icons/md"
+import { useNavigate } from "react-router-dom"
 
 interface IProjectCard {
   title: string
@@ -9,10 +10,11 @@ interface IProjectCard {
   link: string
 }
 const ProjectCard: React.FC<IProjectCard> = ({title, stack, image, link}) => {
+  const navigate = useNavigate()
   const [hoveredCard, setHoveredCard] = useState(false)
-  
+
   return (
-    <Card className="project-card" style={{background: `url(${image})`}} onMouseEnter={() => setHoveredCard(true)} onMouseLeave={() => setHoveredCard(false)} onClick={() => alert(link)}>
+    <Card className="project-card" style={{background: `url(${image})`}} onMouseEnter={() => setHoveredCard(true)} onMouseLeave={() => setHoveredCard(false)} onClick={() => navigate(`/projects${link}`)}>
       <Button className={`project-redirect-button ${hoveredCard ? 'hovered' : ''}`}>
         <MdArrowOutward />
       </Button>

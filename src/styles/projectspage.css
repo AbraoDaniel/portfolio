@@ -1,0 +1,233 @@
+.projects-section.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.show-product-page {
+  padding: 0px 40px;
+  margin-left: 15px;
+  transition: all 1s ease-in-out;
+  animation: showing-page 1s linear normal;
+  
+  
+
+  .projects-title {
+    margin-top: 40px;
+    font-size: 80px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+    color: var(--default-text-color);
+  }
+  .projects-subtitle {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 150;
+    width: 50%;
+    text-align: center;
+    color: var(--default-text-color);
+  }
+  .project-title-card {
+    background-color: var(--lighter-default-background-color);
+    border: 1px solid var(--default-border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 240px;
+    .card-title {
+      color: var(--default-text-color);
+      font-weight: 200;
+    }
+    .card-description {
+      color: var(--default-text-color);
+      font-weight: 350;
+    }
+  }
+  .show-project {
+    height: 662px;
+    width: 100%;
+    background-position: center;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+
+    border: 1px solid var(--default-border-color);
+    -webkit-filter: brightness(0.9);
+    -moz-filter: brightness(0.3);
+    -o-filter: brightness(0.3);
+    -ms-filter: brightness(0.3);
+  }
+  .project-details {
+    /* background-color: red; */
+    width: 90%;
+    .details-card {
+      padding: 10px 40px;
+      border-radius: 0;
+      margin-bottom: 20px;
+      border-color: var(--default-border-color);
+      background-color: var(--lighter-default-background-color);
+
+      .card-title {
+        font-size: 20px;
+        font-weight: 300;
+        color: var(--default-text-color);
+        margin-bottom: 5px;
+      }
+      .card-description {
+        font-size: 15px;
+        font-weight: 200;
+        color: var(--default-text-color);
+      }
+    }
+    .project-descrip {
+      width: 90%;
+      .title {
+        color: var(--default-text-color);
+        font-size: 20px;
+        font-weight: 200;
+      }
+      .description{
+        font-size: 35px;
+        color: var(--default-text-color);
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.projects-section-page {
+  padding: 0px 40px;
+  margin-left: 15px;
+  transition: all 1s ease-in-out;
+  animation: showing-page 1s linear normal;
+
+  .projects-title {
+    font-size: 80px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+    color: var(--default-text-color);
+  }
+  .projects-subtitle {
+    margin-bottom: 40px;
+    margin-top: -20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 150;
+    width: 100%;
+    text-align: center;
+    color: var(--default-text-color);
+  }
+  .project-card {
+    background-color: var(--lighter-default-background-color);
+    border: 1px solid var(--default-border-color);
+    padding: 0;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    border-radius: 0;
+    height: 400px;
+    cursor: pointer;
+
+    .ant-card-body {
+      padding: 0
+    }
+    .product-image {
+      width: 100%;
+      height: 330px;
+    }
+    .project-redirect-button{
+      position: relative;
+      bottom: 100px;
+      left: 50%;
+      border-radius: 25px;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      svg {
+        width: 20px;
+        color: var(--default-text-color);
+      }
+      transform: rotate(45deg);
+      background-color: var(--lighter-default-background-color);
+      border: 1px solid var(--default-border-color);
+      backdrop-filter: blur(15px);
+      opacity: 0;
+      will-change: transform;
+    }
+    .project-redirect-button.hovered{
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    .project-redirect-button:hover {
+      background-color: var(--lighter-default-background-color);
+      border: 1px solid var(--default-border-color);
+    }
+    
+    .project-description {
+      width: 560px;
+      height: 60px;
+      margin-bottom: 20px;
+      padding: 0px 20px;
+      backdrop-filter: blur(30px);
+      opacity: 1;
+      background-color: var(--lighter-default-background-color);
+      border: 1px solid var(--default-border-color);
+      backdrop-filter: blur(15px);
+      transition: transform 0.3s ease-in-out; 
+      display: flex;
+      align-items: center;
+
+      .project-text {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .project-subtext {
+        font-size: 12px;
+        font-weight: 350;
+      }
+      
+      .project-text, .project-subtext {
+        color: var(--default-text-color);
+        font-family: 'Inter', sans-serif;
+      }
+
+    }
+  }
+
+  .project-redirect-all-button{
+    background-color: var(--default-background-color);
+    border: 1px solid var(--default-border-color);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+    color: var(--default-text-color);
+    cursor: pointer;
+
+  }
+  
+
+  .project-redirect-all-button.hovered{
+    transform: rotate(45deg);
+    background-color: var(--lighter-default-background-color);
+  }
+
+  .redirect-all-text{
+    font-family: 'Inter', sans-serif;
+    color: var(--default-text-color);
+    margin-left: 10px;
+    margin-right: 20px;
+    font-weight: 200;
+    cursor: pointer;
+  }
+}

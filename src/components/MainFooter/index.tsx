@@ -1,15 +1,17 @@
 import { Col, Layout, Row, Typography } from "antd";
 import { mediaContacts, pageItems, usefullLinks } from "../../util/generalFields";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const { Footer } = Layout;
 const MainFooter: React.FC = () => {
+  const navigate = useNavigate()
+  
   return (
     <Footer className="page-footer" >
       <Row gutter={[16,16]} style={{width: '100%'}}>
         <Col xs={6} className="daniel-name">
           <Row style={{width: '100%'}}>
-            <Typography.Text className="name">
+            <Typography.Text className="name" onClick={() => navigate('/')}>
               {'daniel.'}
             </Typography.Text>
           </Row>

@@ -1,8 +1,8 @@
 import { Button, Col, Row, Typography } from "antd"
-import ProjectCard from "./ProjectCard"
 import { projects } from "../../../util/generalFields"
 import { MdArrowOutward } from "react-icons/md"
 import { useEffect, useRef, useState } from "react"
+import ProjectCard from "../../../components/ProjectCard"
 
 const ProjectsSection: React.FC = () => {
   const [hovered, setHovered] = useState(false)
@@ -52,7 +52,6 @@ const ProjectsSection: React.FC = () => {
             </Col>
           )
         })}
-        
       </Row> 
     </section>
   )
