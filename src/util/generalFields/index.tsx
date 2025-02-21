@@ -1,7 +1,9 @@
 import { GitHubIcon, GmailIcon, LinkedinIcon, OutlookIcon, WhatsappIcon } from "../../components/icons/mediaIcons";
+import AboutPage from "../../pages/AboutPage";
 import ContactPage from "../../pages/ContactPage";
 import DantiGoalsPage from "../../pages/DantiGoalsPage";
 import DantiShopPage from "../../pages/DantiShopPage";
+import DantiWalletPage from "../../pages/DantiWalletPage";
 import HomePage from "../../pages/HomePage";
 import ProjectsPage from "../../pages/ProjectsPage";
 
@@ -9,9 +11,11 @@ import ProjectsPage from "../../pages/ProjectsPage";
 export const routePathsAndElements: any = [
   {path: '/', element: <HomePage />},
   {path: '/contacts', element: <ContactPage />},
+  {path: '/about', element: <AboutPage />},
   {path: '/projects', element: <ProjectsPage />},
   {path: '/projects/danti-shop', element: <DantiShopPage />},
-  {path: '/projects/danti-goals', element: <DantiGoalsPage />}
+  {path: '/projects/danti-goals', element: <DantiGoalsPage />},
+  {path: '/projects/danti-wallet', element: <DantiWalletPage />}
 ]
 
 
@@ -74,6 +78,19 @@ export const pagesInfo = [
       {title: 'Organização Simplificada', description: 'Gerencie suas metas de forma clara, categorizando tarefas e acompanhando seu progresso sem complicações.'},
       {title: 'Acompanhamento Eficiente', description: 'Visualize seus objetivos, priorize atividades e otimize sua produtividade com um sistema de gerenciamento intuitivo.'},
       {title: 'Linguagens', description: 'O projeto foi desenvolvido utilizando Typescript tanto no frontend quanto no backend, ReactJS, HTML e CSS.'}
+    ]
+  },
+  {key: 'danti-wallet', projectName: 'Danti Wallet', description: 'Controle financeiro simplificado! Uma plataforma eficiente para gerenciar despesas, visualizar transações e manter o equilíbrio das suas finanças.',
+    firstInfo: [
+      {title: 'STACK', text: 'FRONTEND + BACKEND'},
+      {title: 'PERFORMANCE', text: 'ESCALÁVEL'},
+      {title: 'DESIGN', text: 'INTUITIVO'},
+      {title: 'GESTÃO', text: 'EFICIENTE'}
+    ],
+    cardsInfo: [
+      {title: 'Controle de Gastos', description: 'Organize suas despesas e receitas em um só lugar, categorizando transações e monitorando seu orçamento com facilidade.'},
+      {title: 'Processos Inteligentes', description: 'Automação na organização das finanças, garantindo maior segurança e precisão na gestão dos dados.'},
+      {title: 'Linguagens', description: 'Desenvolvido com Ruby on Rails e PostgreSQL, proporcionando uma aplicação robusta, escalável e confiável.'}
     ]
   }
 ]

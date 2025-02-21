@@ -1,14 +1,12 @@
 .presentation-page {
-  background: url('public/daniel-bg.png');
-  background-repeat: no-repeat;
-  background-size: 650px;
-  background-position: center;
-  animation: floatBackground 3s ease-in-out infinite;
+  background-repeat: no-repeat !important;
+  background-size: 650px !important;
+  animation: floatBackground 3s ease-in-out infinite !important;
 }
 
 .presentation-text {
-  font-size: 128px;
-  font-family: 'Inter', sans-serif;
+  font-size: 150px;
+  font-family: 'Great Vibes', sans-serif !important;
   text-align: center;
   color: var(--default-text-color);
   font-weight: 250;

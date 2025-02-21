@@ -1,8 +1,13 @@
 import { Col, Row, Typography } from "antd"
 import { projects } from "../../util/generalFields"
 import ProjectCard from "../../components/ProjectCard"
+import { useEffect } from "react"
 
 const ProjectsSection: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [])
+  
   return (
     <section className={`projects-section-page`} >
       <Row style={{width: '100%', display: 'flex', alignItems: 'center'}} justify="space-between">

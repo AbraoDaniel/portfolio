@@ -89,10 +89,37 @@
         font-size: 20px;
         font-weight: 200;
       }
-      .description{
+      .description {
         font-size: 35px;
         color: var(--default-text-color);
         font-weight: 300;
+      }
+      .redirect {
+        font-size: 20px;
+        font-weight: 250;
+        margin-top: 30px;
+        cursor: pointer;
+        color: var(--default-text-color);
+      }
+      .redirect:hover {
+        font-weight: 400;
+      }
+      .project-redirect-all-button{
+        background-color: var(--default-background-color);
+        border: 1px solid var(--default-border-color);
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+        width: 30px;
+        margin-right: 10px;
+        height: 30px;
+        padding: 0;
+        transition: transform 0.3s ease-in-out;
+        color: var(--default-text-color);
+        cursor: pointer;
+      }
+      .project-redirect-all-button.hovered{
+        transform: rotate(45deg);
+        background-color: var(--lighter-default-background-color);
       }
     }
   }

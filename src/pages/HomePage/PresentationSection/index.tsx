@@ -4,7 +4,7 @@ import InfiniteSlider from "../../../components/InfiniteSlider"
 const PresentationSection: React.FC = () => {
   return (
     <section>
-      <Row style={{marginBottom: 40}} className="presentation-page">
+      <Row style={{marginBottom: 40, background: "url('public/daniel-bg.png')"}} className="presentation-page">
         <Col xs={24} style={{display: 'flex', justifyContent: 'center', alignItems: 'end', marginTop: 500}}>
           <Typography.Text className="presentation-text">
             {"Desenvolvedor"}

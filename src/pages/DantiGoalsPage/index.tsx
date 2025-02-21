@@ -1,8 +1,19 @@
-import { Card, Col, Row, Typography } from "antd"
+import { Button, Card, Col, Row, Typography } from "antd"
 import { pagesInfo } from "../../util/generalFields"
+import { useEffect, useState } from "react"
+import { MdArrowOutward } from "react-icons/md"
 
 const DantiGoalsPage: React.FC = () => {
   const currentPage = pagesInfo?.filter((page) => page?.key === 'danti-goals')[0]
+  const [hovered, setHovered] = useState(false)
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [])
+
+  function handleClickSeeRepository() {
+    window.open('https://github.com/AbraoDaniel/personal-goals', '_blank')
+  }
 
   return (
     <section className={`show-product-page`}>
@@ -51,6 +62,14 @@ const DantiGoalsPage: React.FC = () => {
                 <Row>
                   <Typography.Text className="description">
                     {"A ferramenta ideal para organizar, acompanhar e conquistar seus objetivos de forma eficiente e intuitiva."}
+                  </Typography.Text>
+                </Row>
+                <Row>
+                  <Typography.Text className="redirect" onClick={handleClickSeeRepository} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+                    <Button className={`project-redirect-all-button ${hovered ? 'hovered' : ''}`}>
+                      <MdArrowOutward />
+                    </Button>
+                    {"Acessar repositório"}
                   </Typography.Text>
                 </Row>
               </div>

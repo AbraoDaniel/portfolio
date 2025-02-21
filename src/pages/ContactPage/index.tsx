@@ -2,9 +2,13 @@ import { Row, Col } from "antd"
 import ContactForm from "./ContactForm";
 import ContactMedia from "./ContactMedia";
 import { mediaContacts } from "../../util/generalFields";
+import { useEffect } from "react";
 
 const ContactPage: React.FC = () => {
-
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [])
+  
   return (
     <Row style={{width: '100%'}} className="contact-wrapper">
       <Col xs={8}>

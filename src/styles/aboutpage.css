@@ -1,0 +1,139 @@
+.about-wrapper {
+  padding: 10px 50px;
+  display: flex;
+  position: relative; 
+  height: 100%;
+  
+  
+  .about-image {
+    position: sticky;
+    top: 0;
+    background: url('/public/daniel-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 450px;
+    animation: floatImageContact 3s ease-in-out infinite;
+    height: 500px;
+  }
+  .about-content {
+
+    .name {
+      color: var(--default-text-color);
+      font-size: 150px;
+      font-family: 'Great Vibes', 'Inter', sans-serif;
+      font-weight: 300;
+      margin-top: 30px;
+      margin-bottom: -20px;    
+    }
+    .description {
+      color: var(--default-text-color);
+      font-size: 25px;
+      width: 90%;
+      font-weight: 200;
+    }
+  }
+  .redirect {
+    color: var(--default-text-color) !important;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 200;
+    .project-redirect-all-button{
+      background-color: var(--default-background-color);
+      border: 1px solid var(--default-border-color) !important;
+      backdrop-filter: blur(15px);
+      border-radius: 25px;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      padding: 0;
+      color: var(--default-text-color) !important;
+      transform: rotate(135deg);
+      cursor: pointer;
+      margin-top: 40px;
+      margin-right: 10px;
+    }
+    .project-redirect-all-button.hovered{
+      background-color: var(--lighter-default-background-color) !important;
+    }
+  }
+
+  .presentation {
+    background-color: var(--lighter-default-background-color);
+    margin-top: 100px;
+    border: 1px solid var(--default-border-color);
+    height: 100%;
+    width: 100%;
+    padding: 30px 80px;
+    .name {
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 250;
+    }
+    .sub-text {
+      margin-top: 50px;
+      font-size: 40px;
+      font-weight: 200;
+      color: var(--default-text-color);
+    }
+    .main-text {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 150;
+      white-space: break-spaces;
+      color: var(--default-text-color);
+    }
+    .personal-photo {
+      margin-top: 20px;
+      border: 1px solid var(--default-border-color);
+      background-color: rebeccapurple;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .contact-cards {
+    margin-top: 20px;
+    padding: 2px;
+    .contact-card{
+      cursor: pointer;
+      background-color: rgba(22, 22, 22, 0.725);
+      border: 1px solid var(--default-border-color);
+      width: 100%;
+
+      
+
+      .info {
+        padding: 15px 5px;
+        display: flex;
+        align-items: center;
+        svg {
+          color: var(--default-text-color) !important;
+          width: 25px;
+        }
+        .media-name {
+          font-family: 'Inter', sans-serif;
+          margin-left: 10px;
+          font-weight: 350;
+          font-size: 14px;
+          color: var(--default-text-color);
+        }
+      }
+
+      .media-arrow {
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in-out;
+        color: var(--default-text-color);
+        margin-right: 5px;
+      }
+
+      .media-arrow.hovered {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .contact-card:hover {
+      background-color: rgba(27, 27, 27, 0.725);
+    }
+  }
+}

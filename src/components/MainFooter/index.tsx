@@ -5,6 +5,13 @@ import { Link, useNavigate } from "react-router-dom";
 const { Footer } = Layout;
 const MainFooter: React.FC = () => {
   const navigate = useNavigate()
+  function handleClickToRedirect(value: string) {
+    if (value !== 'github') {
+      return navigate(value)
+    }
+
+    window.open('https://github.com/AbraoDaniel', '_blank')
+  }
   
   return (
     <Footer className="page-footer" >
@@ -18,12 +25,12 @@ const MainFooter: React.FC = () => {
           {mediaContacts?.map((media) => {
             return (
               <Row style={{width: '100%', display: 'flex', alignItems: 'center'}} className={"first-column-footer"}>
-                <div className="footer-icon">
+                <div className="footer-icon" onClick={() => window.open(media?.link, '_blank')}>
                   <div >
                     {media?.icon}
                   </div>
                 </div>
-                <Typography.Text className="media-name">
+                <Typography.Text className="media-name" onClick={() => window.open(media?.link, '_blank')}>
                   {media?.label}
                 </Typography.Text>
               </Row>
@@ -38,7 +45,7 @@ const MainFooter: React.FC = () => {
             {pageItems?.map((page) => {
               return (
                 <Row style={{width: '100%', display: 'flex', alignItems: 'center'}}>
-                  <Typography.Text className="media-name">
+                  <Typography.Text className="media-name" onClick={() => handleClickToRedirect(page?.key)}>
                     {page?.label}
                   </Typography.Text>
                 </Row>
