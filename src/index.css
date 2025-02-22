@@ -7,6 +7,7 @@
 @import "./styles/projectspage.css";
 @import "./styles/aboutpage.css";
 @import "./styles/workpage.css";
+@import "./styles/themeswitch.css";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -31,6 +32,21 @@
   --default-border-color: rgba(255, 255, 255, 0.219);
   --lighter-default-background-color: rgba(218, 197, 167, 0.05);
   --success-color: rgba(0, 173, 0, 0.74);
+  --form-background: rgba(22, 22, 22, 0.725);
+  --hovered-form-background: rgba(27, 27, 27, 0.725);
+}
+
+.light-mode:root {
+  --default-background-color: white;
+  --message-background-color: white;
+  --default-divider-color: black;
+  --default-text-color: black; 
+  --default-secondary-text-color: black;
+  --default-border-color: black;
+  --lighter-default-background-color: rgba(221, 221, 221, 0.856);
+  --success-color: rgba(0, 173, 0, 0.74);
+  --form-background: white;
+  --hovered-form-background: white;
 }
 
 html,

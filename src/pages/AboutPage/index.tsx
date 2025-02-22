@@ -9,6 +9,7 @@ const AboutPage: React.FC = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [])
+ 
   
   return (
     <Row style={{width: '100%'}} className="about-wrapper">

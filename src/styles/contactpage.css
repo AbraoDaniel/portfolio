@@ -3,12 +3,10 @@
   padding: 0 60px;
   animation: showing 1s ease-in-out normal;
   .contact-image {
-    background: url('public/daniel-bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 450px;
-    animation: floatImageContact 3s ease-in-out infinite;
-    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: 450px !important;
+    animation: floatImageContact 3s ease-in-out infinite !important;
+    height: 100% !important;
   }
   .contact-form.loading {
     -webkit-filter: brightness(0.3);
@@ -69,7 +67,7 @@
   }
 
   .contact-form {
-    background-color: rgba(22, 22, 22, 0.725);
+    background-color: var(--form-background);
     border: 1px solid var(--default-border-color);
     padding: 40px 50px;
     width: 100%;
@@ -163,7 +161,7 @@
     padding: 2px;
     .contact-card{
       cursor: pointer;
-      background-color: rgba(22, 22, 22, 0.725);
+      background-color: var(--form-background);
       border: 1px solid var(--default-border-color);
       width: 100%;
 
@@ -199,7 +197,7 @@
     }
     
     .contact-card:hover {
-      background-color: rgba(27, 27, 27, 0.725);
+      background-color: var(--hovered-form-background);
     }
   }
 }

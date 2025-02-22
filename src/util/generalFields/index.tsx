@@ -98,8 +98,8 @@ export const pagesInfo = [
 ]
 
 export const worksInfo = [
-  {key: 'first', infos: [{title: 'CONCEPT', description: "Iniciamos compreendo suas ideias, seus objetivos e o público-alvo para criar um direcionamento estratégico sólido. Nesta etapa, alinhamos expectativas e estruturamos um plano para transformar sua visão em um produto digital bem definido."},
+  {key: 'first', infos: [{title: 'CONCEITO', description: "Iniciamos compreendo suas ideias, seus objetivos e o público-alvo para criar um direcionamento estratégico sólido. Nesta etapa, alinhamos expectativas e estruturamos um plano para transformar sua visão em um produto digital bem definido."},
     {title: 'WIREFRAME', description: "Criamos um esqueleto visual da interface para organizar elementos, navegação e funcionalidades. O wireframe serve como um mapa estruturado do site ou aplicativo, garantindo uma experiência do usuário intuitiva e eficiente desde o início."},
-    {title: 'WIREFRAME', description: "Criamos um esqueleto visual da interface para organizar elementos, navegação e funcionalidades. O wireframe serve como um mapa estruturado do site ou aplicativo, garantindo uma experiência do usuário intuitiva e eficiente desde o início."}
+    {title: 'PROTOTIPAÇÃO', description: "Desenvolvo um protótipo interativo que simula a experiência real do usuário. Isso permite testar fluxos, validar funcionalidades e refinar o design antes do desenvolvimento final, garantindo um produto funcional e bem otimizado."}
   ]}
 ]

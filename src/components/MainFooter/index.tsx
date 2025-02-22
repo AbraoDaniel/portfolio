@@ -1,10 +1,18 @@
-import { Col, Layout, Row, Typography } from "antd";
+import { Col, Layout, Row, Switch, Typography } from "antd";
 import { mediaContacts, pageItems, usefullLinks } from "../../util/generalFields";
 import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { usePage } from "../../hooks/usePage";
 
 const { Footer } = Layout;
 const MainFooter: React.FC = () => {
   const navigate = useNavigate()
+  const { isLightMode, setIsLightMode } = usePage()
+
+  useEffect(() => {
+    setIsLightMode(document.documentElement.classList.contains("light-mode"));
+  }, []);
+
   function handleClickToRedirect(value: string) {
     if (value !== 'github') {
       return navigate(value)
@@ -12,6 +20,11 @@ const MainFooter: React.FC = () => {
 
     window.open('https://github.com/AbraoDaniel', '_blank')
   }
+
+  const toggleDarkMode = () => {
+    document.documentElement.classList.toggle("light-mode");
+    setIsLightMode((prev: boolean) => !prev);
+  };
   
   return (
     <Footer className="page-footer" >
@@ -80,6 +93,15 @@ const MainFooter: React.FC = () => {
                 <br/>
                 {'Created by Daniel A. Abrão'}
               </Typography.Text>
+            </Row>
+            <Row justify="center" style={{ marginTop: "20px" }}>
+              <Switch 
+                className="theme-switch"
+                checked={isLightMode}
+                onChange={toggleDarkMode} 
+                checkedChildren="☀️"
+                unCheckedChildren="🌙"
+              />
             </Row>
           </Row>
         </Col>

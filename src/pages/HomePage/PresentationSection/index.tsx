@@ -1,10 +1,13 @@
 import { Row, Col, Typography  } from "antd"
 import InfiniteSlider from "../../../components/InfiniteSlider"
+import { usePage } from "../../../hooks/usePage";
 
 const PresentationSection: React.FC = () => {
+  const { isLightMode } = usePage()
+  
   return (
     <section>
-      <Row style={{marginBottom: 40, background: "url('public/daniel-bg.png')"}} className="presentation-page">
+      <Row style={{marginBottom: 40, background: isLightMode ? "url('public/danti-bg-black.png')" : "url('public/daniel-bg.png')"}} className="presentation-page">
         <Col xs={24} style={{display: 'flex', justifyContent: 'center', alignItems: 'end', marginTop: 500}}>
           <Typography.Text className="presentation-text">
             {"Desenvolvedor"}

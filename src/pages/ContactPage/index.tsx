@@ -3,8 +3,11 @@ import ContactForm from "./ContactForm";
 import ContactMedia from "./ContactMedia";
 import { mediaContacts } from "../../util/generalFields";
 import { useEffect } from "react";
+import { usePage } from "../../hooks/usePage";
 
 const ContactPage: React.FC = () => {
+  const { isLightMode } = usePage()
+  
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [])
@@ -12,7 +15,7 @@ const ContactPage: React.FC = () => {
   return (
     <Row style={{width: '100%'}} className="contact-wrapper">
       <Col xs={8}>
-        <div className="contact-image" >
+        <div className="contact-image" style={{background: isLightMode ? "url('public/danti-bg-black.png')" : "url('public/daniel-bg.png')"}}>
         </div>
       </Col>
       <Col xs={13}>

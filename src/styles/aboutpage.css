@@ -1,3 +1,24 @@
+.light-mode {
+  .about-wrapper {
+    padding: 10px 50px;
+    display: flex;
+    position: relative; 
+    height: 100%;
+    
+    
+    .about-image {
+      position: sticky;
+      top: 0;
+      background: url('/public/danti-bg-black.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 450px;
+      animation: floatImageContact 3s ease-in-out infinite;
+      height: 500px;
+    }
+  }
+}
+
 .about-wrapper {
   padding: 10px 50px;
   display: flex;
@@ -97,7 +118,7 @@
     padding: 2px;
     .contact-card{
       cursor: pointer;
-      background-color: rgba(22, 22, 22, 0.725);
+      background-color: var(--form-background);
       border: 1px solid var(--default-border-color);
       width: 100%;
 
@@ -133,7 +154,7 @@
     }
     
     .contact-card:hover {
-      background-color: rgba(27, 27, 27, 0.725);
+      background-color: var(--hovered-form-background);
     }
   }
 }
