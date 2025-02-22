@@ -13,11 +13,11 @@ const AboutPage: React.FC = () => {
   
   return (
     <Row style={{width: '100%'}} className="about-wrapper">
-      <Col xs={8}>
+      <Col xs={24} lg={8}>
         <div className="about-image">
         </div>
       </Col>
-      <Col xs={16}>
+      <Col xs={24} lg={16}>
         <div className="about-content">
           <Row style={{width: '100%'}}>
             <Row style={{width: '100%'}}>
@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
           <Row gutter={[16,16]} style={{width: '100%', marginRight: 0, marginLeft: 0}} className="contact-cards">
             {mediaContacts?.map((media) => {
               return (
-                <Col xs={8}>
+                <Col xs={24} lg={8}>
                   <ContactMedia label={media?.label} icon={media?.icon} link={media?.link} />
                 </Col>
               )

@@ -10,6 +10,7 @@
   text-align: center;
   color: var(--default-text-color);
   font-weight: 250;
+  margin-top: 500px;
 }
 
 .presentation-subtext {
@@ -270,5 +271,42 @@
     margin-right: 20px;
     font-weight: 200;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .presentation-page {
+    background-repeat: no-repeat !important;
+    background-size: 400px !important;
+    animation: floatBackground-max-600 3s ease-in-out infinite !important;
+  }
+  .presentation-text {
+    font-size: 70px;
+    font-family: 'Great Vibes', sans-serif !important;
+    text-align: center;
+    color: var(--default-text-color);
+    font-weight: 250;
+    margin-top: 280px;
+  }
+  .presentation-subtext {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: var(--default-text-color);
+    white-space: break-spaces;
+    font-weight: 150;
+  }
+  .section-row {
+    padding: 0px !important;
+  }
+  .projects-section {
+    padding: 0px !important;
+  }
+  
+  .project-card {
+    margin-top: 10px;
+    .project-description {
+      width: 320px !important;
+    }
   }
 }

@@ -47,7 +47,7 @@ const ProjectsSection: React.FC = () => {
       <Row gutter={[16,16]} style={{width: '100%'}}>
         {projects?.map((project) => {
           return (
-            <Col xs={12}> 
+            <Col xs={24} lg={12}> 
               <ProjectCard title={project?.title} stack={project?.stack} image={project?.image} link={project?.link}/>
             </Col>
           )

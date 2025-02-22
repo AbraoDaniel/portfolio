@@ -1,6 +1,7 @@
 import { Button, Card, Row, Typography } from "antd"
 import { useState } from "react"
 import { MdArrowOutward } from "react-icons/md"
+import { useNavigate } from "react-router-dom"
 
 interface ICardContent {
   number: string
@@ -9,6 +10,8 @@ interface ICardContent {
   link: string
 }
 const CardContent: React.FC<ICardContent> = ({number, title, text, link}) => {
+  const navigate = useNavigate()
+  console.log(link)
   const [hovered, setHovered] = useState(false)
   
   return (
@@ -32,7 +35,7 @@ const CardContent: React.FC<ICardContent> = ({number, title, text, link}) => {
         <Button className={`project-redirect-all-button ${hovered ? 'hovered' : ''}`}>
           <MdArrowOutward />
         </Button>
-        <Typography.Text className="card-redirect" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} onClick={() => alert(link)}>
+        <Typography.Text className="card-redirect" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} onClick={() => navigate('/work')}>
           VER SOBRE
         </Typography.Text>
       </Row>

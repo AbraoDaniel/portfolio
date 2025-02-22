@@ -14,16 +14,16 @@ const ContactPage: React.FC = () => {
   
   return (
     <Row style={{width: '100%'}} className="contact-wrapper">
-      <Col xs={8}>
+      <Col xs={24} lg={8}>
         <div className="contact-image" style={{background: isLightMode ? "url('public/danti-bg-black.png')" : "url('public/daniel-bg.png')"}}>
         </div>
       </Col>
-      <Col xs={13}>
+      <Col xs={24} lg={13}>
         <ContactForm />
         <Row gutter={[16,16]} style={{width: '100%', marginRight: 0, marginLeft: 0}} className="contact-cards">
           {mediaContacts?.map((media) => {
             return (
-              <Col xs={8}>
+              <Col xs={24} lg={8}>
                 <ContactMedia label={media?.label} icon={media?.icon} link={media?.link} />
               </Col>
             )

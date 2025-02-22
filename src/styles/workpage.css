@@ -45,7 +45,10 @@
       margin-top: 20px;
       margin-bottom: 30px;
       filter: brightness(0.5);
-      border: 1px solid white
+      border: 1px solid white;
+    }
+    .ant-image  {
+      width: 100%;
     }
     .work-first-col {
       color: var(--default-text-color);
@@ -63,4 +66,45 @@
 .default-divider {
   background-color: var(--default-divider-color);
   margin-top: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .work-wrapper {
+    .work-title {
+      font-size: 50px;
+    }
+    .work-subtitle {
+      margin-top: 0px;
+      font-size: 40px;
+    }
+    .work-description {
+      font-size: 15px;
+    }
+    .work-presentation {
+      margin-top: 40px;
+      padding: 20px 20px;
+      margin-bottom: -40px;
+      .title {
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 150;
+        color: var(--default-text-color)
+      }
+      .subtitle {
+        font-size: 25px;
+        font-weight: 200;
+        color: var(--default-text-color);
+      }
+      .work-first-col {
+        color: var(--default-text-color);
+        font-weight: 250;
+        font-size: 15px;
+      }
+      .work-second-col {
+        color: var(--default-text-color);
+        font-weight: 150;
+        font-size: 15px;
+      }
+    }
+  }
 }

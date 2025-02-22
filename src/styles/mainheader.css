@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  position: fixed;
   position: sticky;
   top: 0;
   left: 0;
@@ -65,5 +64,120 @@
       font-family: 'Zain', 'Inter', sans-serif;
       color: var(--default-text-color) !important;
     }
+  }
+}
+
+.reduced-main-header {
+  height: 80px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out; 
+
+  .ant-layout-header {
+    padding: 0px !important;
+  }
+
+  .header-content {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+    opacity: 1;
+    background-color: var(--lighter-default-background-color);
+    border: 1px solid var(--default-border-color);
+  }
+  .menu-icon {
+    position: relative;
+    left: -50px;
+    margin-top: 3px;
+    font-size: 20px;
+    color: var(--default-text-color)
+  }
+  .daniel-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    .name {
+      font-size: 30px;
+      margin-top: 5px;
+      /* margin-left: 20px; */
+      font-family: 'Zain', 'Inter', sans-serif;
+      color: var(--default-text-color) !important;
+    }
+  }
+  .ant-input-group-addon {
+    background-color: white;
+  }
+
+  .ant-menu-item {
+    color: black
+  }
+
+  .ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected, .ant-menu-item:hover {
+    color: black;
+    font-weight: 600;
+  }
+   
+  .header-menu {
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
+    border-bottom: none;
+    font-family: 'Inter', sans-serif;
+    .ant-menu-title-content{
+      color: var(--default-text-color) !important;
+      font-size: 13px;
+    }
+  }
+
+  .ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after {
+    border-bottom-color: var(--default-text-color);
+    border-bottom-width: 1px;
+  }
+}
+
+.ant-drawer .ant-drawer-header {
+  border-bottom: 1px solid var(--default-divider-color);
+}
+
+.header-drawer {
+  background-color: var(--message-background-color) !important;
+  .header-logo {
+    font-size: 28px;
+    margin-top: 5px;
+    font-family: 'Zain', 'Inter', sans-serif;
+    color: var(--default-text-color);
+  }
+  .ant-drawer-close {
+    color: var(--default-text-color);
+  }
+  .header-menu{
+    background-color: var(--message-background-color);
+    .ant-menu-title-content {
+      color: var(--default-text-color);
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .main-header {
+    display: none;
+  }
+  .reduced-main-header {
+    display: flex;
+  }
+  .ant-layout-header {
+    padding: 20px;
   }
 }

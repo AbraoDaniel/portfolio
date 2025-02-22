@@ -258,3 +258,9 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .projects-section-page {
+    padding: 0;
+  }  
+}

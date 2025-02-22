@@ -29,7 +29,7 @@ const MainFooter: React.FC = () => {
   return (
     <Footer className="page-footer" >
       <Row gutter={[16,16]} style={{width: '100%'}}>
-        <Col xs={6} className="daniel-name">
+        <Col xs={12} lg={6} className="daniel-name">
           <Row style={{width: '100%'}}>
             <Typography.Text className="name" onClick={() => navigate('/')}>
               {'daniel.'}
@@ -50,7 +50,7 @@ const MainFooter: React.FC = () => {
             )
           })}
         </Col>
-        <Col xs={6} className="footer-pages-title">
+        <Col xs={12} lg={6} className="footer-pages-title">
           <Row style={{width: '100%'}}>
             <Typography.Text className="name">
               {'Páginas'}
@@ -66,7 +66,7 @@ const MainFooter: React.FC = () => {
             })}
           </Row>
         </Col>
-        <Col xs={6} className="footer-pages-title">
+        <Col xs={12} lg={6} className="footer-pages-title">
           <Row style={{width: '100%'}}>
             <Typography.Text className="name">
               {'Links úteis'}
@@ -82,7 +82,7 @@ const MainFooter: React.FC = () => {
             })}
           </Row>
         </Col>
-        <Col xs={6} className="footer-pages-title">
+        <Col xs={12} lg={6} className="footer-pages-title">
           <Row style={{width: '100%'}} justify="start">
             <Typography.Text className="name">
               {'Créditos'}
@@ -106,7 +106,6 @@ const MainFooter: React.FC = () => {
           </Row>
         </Col>
       </Row>
-      {/* Danti ©{new Date().getFullYear()} Created by Daniel A. Abrão */}
     </Footer>
   )
 }

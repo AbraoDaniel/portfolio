@@ -13,7 +13,7 @@ const SpecialitiesSection: React.FC = () => {
           setIsVisible(entry.isIntersecting); // Atualiza o estado quando a seção entra na tela
         }
       },
-      { threshold: 0.5 } // A ação dispara quando 30% da seção aparece na tela
+      { threshold: 0.2 } // A ação dispara quando 30% da seção aparece na tela
     );
 
     if (sectionRef.current) {
@@ -32,7 +32,7 @@ const SpecialitiesSection: React.FC = () => {
       <Row gutter={[16,16]} style={{width: '100%', padding: '0px 40px'}} className={`section-row ${visible ? 'visible' : ''}`}>
         {specialitiesContent?.map((speciality, index) => {
           return (
-            <Col xs={8}>
+            <Col xs={24} lg={8}>
               <CardContent number={(index + 1)?.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})} title={speciality?.title} text={speciality?.text} link={speciality?.link}/>
             </Col>
           )

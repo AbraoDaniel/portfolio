@@ -40,12 +40,12 @@ const WorkPage: React.FC = () => {
             {firstCardInfos?.map((info, index) => {
               return (
                 <>
-                  <Col xs={5}>
+                  <Col xs={10} lg={5}>
                     <Typography.Text className="work-first-col">
                       {info?.title}
                     </Typography.Text>
                   </Col>
-                  <Col xs={19}>
+                  <Col xs={14} lg={19}>
                     <Typography.Text className="work-second-col">
                       {info?.description}
                     </Typography.Text>

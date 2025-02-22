@@ -1,0 +1,45 @@
+import { Drawer, Menu } from "antd"
+import { useNavigate } from "react-router-dom";
+
+interface IHeaderDrawer {
+  setOpenHeaderDrawer: (value: boolean) => void
+  items: {
+    key: string;
+    label: string;
+}[]
+}
+const HeaderDrawer: React.FC<IHeaderDrawer> = ({setOpenHeaderDrawer, items}) => {
+  const navigate = useNavigate()
+
+  return (
+    <Drawer 
+      open
+      onClose={() => setOpenHeaderDrawer(false)}
+      placement="left"
+      width={700}
+      className="header-drawer"
+      title={
+      <div style={{textAlign: 'center'}}>
+        <div className="header-logo" style={{marginTop: 0}} onClick={() => {
+          navigate('/')
+          setOpenHeaderDrawer(false)
+        }}>
+          {'daniel.'}
+        </div>
+      </div>
+      }
+    >
+      <Menu
+        className='header-menu'
+        mode="vertical"
+        onClick={(value) => {
+          navigate(value?.key)
+          setOpenHeaderDrawer(false)
+        }}
+        items={items}
+      />
+    </Drawer>
+  )
+}
+
+export default HeaderDrawer
