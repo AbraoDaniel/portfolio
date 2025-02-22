@@ -6,6 +6,7 @@
 @import "./styles/message.css";
 @import "./styles/projectspage.css";
 @import "./styles/aboutpage.css";
+@import "./styles/workpage.css";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -24,6 +25,7 @@
 
   --default-background-color: #0E0E0E;
   --message-background-color: #161616;
+  --default-divider-color: rgba(49, 49, 49, 0.699);
   --default-text-color: #DAC5A7; 
   --default-secondary-text-color: #DAC5A799;
   --default-border-color: rgba(255, 255, 255, 0.219);

@@ -30,7 +30,7 @@ const AboutPage: React.FC = () => {
               </Typography.Text>
             </Row>
             <Row>
-              <a href="#teste">
+              <a href="#aboutme">
                 <Typography.Text className="redirect" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
                   <Button className={`project-redirect-all-button ${hovered ? 'hovered' : ''}`}>
                     <MdArrowOutward />
@@ -41,7 +41,7 @@ const AboutPage: React.FC = () => {
             </Row>
           </Row>
           <Row style={{width: '100%'}}>
-            <div className="presentation" id='teste'>
+            <div className="presentation" id='aboutme'>
               <Row>
                 <Typography.Text className="name">
                   {'DANIEL ALEXSANDRO ABRÃO'}
@@ -57,9 +57,9 @@ const AboutPage: React.FC = () => {
                   {"Sou um desenvolvedor frontend apaixonado por criar experiências digitais envolventes e eficientes. Minha especialidade está em desenvolver interfaces modernas, acessíveis e de alta performance, garantindo que cada usuário tenha uma navegação fluida e intuitiva.\n\nTrabalho principalmente com ReactJS e TypeScript, utilizando boas práticas de UI/UX para entregar soluções escaláveis e bem estruturadas. Além disso, tenho experiência no backend com Ruby on Rails e Java, o que me permite compreender toda a estrutura de uma aplicação e garantir uma integração eficiente entre frontend e backend.\n\nMinha abordagem é centrada na qualidade e otimização, sempre buscando melhorar a performance e acessibilidade das aplicações. Estou constantemente atualizado com as novas tendências do mercado, aplicando as melhores tecnologias e metodologias para desenvolver produtos que realmente fazem a diferença.\n\nSeja construindo um novo projeto ou aprimorando uma aplicação existente, meu compromisso é sempre entregar excelência, inovação e impacto real. 🚀"}
                 </Typography.Text>
               </Row>
-              <Row>
+              <Row justify="center">
                 <Typography.Text className="personal-photo">
-                  <Image preview={false} src="public/daniel-bg.png"/>
+                  <Image preview={false} src="public/mypicture.png"/>
                 </Typography.Text>
               </Row>
             </div>

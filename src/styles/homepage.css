@@ -58,15 +58,37 @@
   }
   .card-redirect {
     color: var(--default-text-color);
-    margin-top: 30px;
+    font-weight: 250;
     cursor: pointer;
   }
   .card-redirect:hover {
-    color: white;
+    font-weight: 400;
   }
-
   .card-number, .card-title, .card-text, .card-redirect {
     font-family: 'Inter', sans-serif;
+  }
+  .project-redirect-all-button{
+    background-color: var(--default-background-color);
+    border: 1px solid var(--default-border-color);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+    color: var(--default-text-color);
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .project-redirect-all-button.hovered{
+    transform: rotate(45deg);
+    background-color: var(--lighter-default-background-color);
+  }
+  .project-redirect-all-button:hover {
+    background-color: var(--lighter-default-background-color) !important;
+    color: var(--default-text-color) !important;
+    border-color: var(--default-border-color) !important;
   }
 }
 
@@ -233,6 +255,12 @@
   .project-redirect-all-button.hovered{
     transform: rotate(45deg);
     background-color: var(--lighter-default-background-color);
+  }
+
+  .project-redirect-all-button:hover {
+    background-color: var(--lighter-default-background-color) !important;
+    color: var(--default-text-color) !important;
+    border-color: var(--default-border-color) !important;
   }
 
   .redirect-all-text{

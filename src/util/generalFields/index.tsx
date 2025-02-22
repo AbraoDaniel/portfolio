@@ -6,13 +6,15 @@ import DantiShopPage from "../../pages/DantiShopPage";
 import DantiWalletPage from "../../pages/DantiWalletPage";
 import HomePage from "../../pages/HomePage";
 import ProjectsPage from "../../pages/ProjectsPage";
+import WorkPage from "../../pages/WorkPage";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export const routePathsAndElements: any = [
   {path: '/', element: <HomePage />},
   {path: '/contacts', element: <ContactPage />},
-  {path: '/about', element: <AboutPage />},
   {path: '/projects', element: <ProjectsPage />},
+  {path: '/about', element: <AboutPage />},
+  {path: '/work', element: <WorkPage />},
   {path: '/projects/danti-shop', element: <DantiShopPage />},
   {path: '/projects/danti-goals', element: <DantiGoalsPage />},
   {path: '/projects/danti-wallet', element: <DantiWalletPage />}
@@ -28,7 +30,6 @@ export const specialitiesContent = [
 export const projects = [
   {title: 'DANTI SHOP', stack: 'FRONTEND', image: 'public/Projects/danti-shop_.png', link: '/danti-shop'},
   {title: 'DANTI GOALS', stack: 'FRONTEND + BACKEND', image: 'public/Projects/danti-goals.png', link: '/danti-goals'},
-  {title: 'EM BREVE', stack: 'FRONTEND', image: 'public/Projects/black-bg.png', link: '/soon'},
   {title: 'DANTI WALLET', stack: 'BACKEND', image: 'public/Projects/danti-wallet.png', link: '/danti-wallet'},
 ]
 
@@ -38,11 +39,12 @@ export const mediaContacts = [
   {label: 'OUTLOOK', icon: <OutlookIcon />, link: 'mailto:abraodaniel@hotmail.com'},
   {label: 'GMAIL', icon: <GmailIcon />, link: 'mailto:danabrao@gmail.com'},
   {label: 'WHATSAPP', icon: <WhatsappIcon />, link: 'https://wa.me/5547984894797'},
+  
 ]
 
 export const pageItems = [
-  {key: 'work', label: 'SERVIÇOS'},
   {key: 'projects', label: 'PROJETOS'},
+  {key: 'work', label: 'SERVIÇOS'},
   {key: 'about', label: 'SOBRE'},
   {key: 'github', label: 'GITHUB'},
   {key: 'contacts', label: 'CONTATOS'},
@@ -93,4 +95,11 @@ export const pagesInfo = [
       {title: 'Linguagens', description: 'Desenvolvido com Ruby on Rails e PostgreSQL, proporcionando uma aplicação robusta, escalável e confiável.'}
     ]
   }
+]
+
+export const worksInfo = [
+  {key: 'first', infos: [{title: 'CONCEPT', description: "Iniciamos compreendo suas ideias, seus objetivos e o público-alvo para criar um direcionamento estratégico sólido. Nesta etapa, alinhamos expectativas e estruturamos um plano para transformar sua visão em um produto digital bem definido."},
+    {title: 'WIREFRAME', description: "Criamos um esqueleto visual da interface para organizar elementos, navegação e funcionalidades. O wireframe serve como um mapa estruturado do site ou aplicativo, garantindo uma experiência do usuário intuitiva e eficiente desde o início."},
+    {title: 'WIREFRAME', description: "Criamos um esqueleto visual da interface para organizar elementos, navegação e funcionalidades. O wireframe serve como um mapa estruturado do site ou aplicativo, garantindo uma experiência do usuário intuitiva e eficiente desde o início."}
+  ]}
 ]

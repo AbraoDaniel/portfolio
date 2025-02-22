@@ -1,0 +1,66 @@
+.work-wrapper {
+  .work-title {
+    font-size: 100px;
+    font-weight: 250;
+    width: 100%;
+    text-align: center;
+    color: var(--default-text-color);
+  }
+  .work-subtitle {
+    margin-top: -20px;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 150;
+    width: 100%;
+    text-align: center;
+    color: var(--default-text-color);
+  }
+  .work-description {
+    font-size: 20px;
+    font-weight: 150;
+    width: 100%;
+    text-align: center;
+    color: var(--default-text-color);
+  }
+  .work-presentation {
+    background-color: var(--lighter-default-background-color);
+    margin-top: 100px;
+    border: 1px solid var(--default-border-color);
+    height: 100%;
+    width: 90%;
+    padding: 60px 80px;
+    margin-bottom: -80px;
+    .title {
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 150;
+      color: var(--default-text-color)
+    }
+    .subtitle {
+      font-size: 40px;
+      font-weight: 200;
+      color: var(--default-text-color);
+    }
+    .laptop-image {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      filter: brightness(0.5);
+      border: 1px solid white
+    }
+    .work-first-col {
+      color: var(--default-text-color);
+      font-weight: 250;
+      font-size: 15px;
+    }
+    .work-second-col {
+      color: var(--default-text-color);
+      font-weight: 150;
+      font-size: 15px;
+    }
+  }
+}
+
+.default-divider {
+  background-color: var(--default-divider-color);
+  margin-top: 60px;
+}

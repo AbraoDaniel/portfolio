@@ -12,7 +12,7 @@ const ContactPage: React.FC = () => {
   return (
     <Row style={{width: '100%'}} className="contact-wrapper">
       <Col xs={8}>
-        <div className="contact-image">
+        <div className="contact-image" >
         </div>
       </Col>
       <Col xs={13}>

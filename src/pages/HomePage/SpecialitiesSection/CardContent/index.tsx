@@ -1,4 +1,6 @@
-import { Card, Row, Typography } from "antd"
+import { Button, Card, Row, Typography } from "antd"
+import { useState } from "react"
+import { MdArrowOutward } from "react-icons/md"
 
 interface ICardContent {
   number: string
@@ -7,6 +9,8 @@ interface ICardContent {
   link: string
 }
 const CardContent: React.FC<ICardContent> = ({number, title, text, link}) => {
+  const [hovered, setHovered] = useState(false)
+  
   return (
     <Card className="specialities-card">
       <Row style={{width: '100%'}}>
@@ -24,8 +28,11 @@ const CardContent: React.FC<ICardContent> = ({number, title, text, link}) => {
           {text}
         </Typography.Text>
       </Row>
-      <Row style={{width: '100%'}}>
-        <Typography.Text className="card-redirect" onClick={() => alert(link)}>
+      <Row style={{width: '100%', display: 'flex', alignItems: 'center', marginTop: 10}} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+        <Button className={`project-redirect-all-button ${hovered ? 'hovered' : ''}`}>
+          <MdArrowOutward />
+        </Button>
+        <Typography.Text className="card-redirect" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} onClick={() => alert(link)}>
           VER SOBRE
         </Typography.Text>
       </Row>

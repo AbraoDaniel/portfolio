@@ -85,9 +85,9 @@
     .personal-photo {
       margin-top: 20px;
       border: 1px solid var(--default-border-color);
-      background-color: rebeccapurple;
+      justify-content: center;
       img {
-        width: 100%;
+        width: 300px;
       }
     }
   }
