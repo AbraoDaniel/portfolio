@@ -15,7 +15,7 @@ const ContactPage: React.FC = () => {
   return (
     <Row style={{width: '100%'}} className="contact-wrapper">
       <Col xs={24} lg={10} xl={8} xxl={10}>
-        <div className="contact-image" style={{background: isLightMode ? "url('public/danti-bg-black.png')" : "url('public/daniel-bg.png')"}}>
+        <div className="contact-image" style={{background: isLightMode ? "url('./danti-bg-black.png')" : "url('./daniel-bg.png')"}}>
         </div>
       </Col>
       <Col xs={24} lg={14} xl={13} xxl={14}>

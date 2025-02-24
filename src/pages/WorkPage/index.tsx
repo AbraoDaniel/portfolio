@@ -34,7 +34,7 @@ const WorkPage: React.FC = () => {
             </Typography.Text>
           </Row>
           <Row>
-            <Image preview={false} src="public/danti-laptop.png" className="laptop-image"/>
+            <Image preview={false} src="./danti-laptop.png" className="laptop-image"/>
           </Row>
           <Row style={{width: '100%'}}>
             {firstCardInfos?.map((info, index) => {

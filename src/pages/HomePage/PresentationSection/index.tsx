@@ -7,7 +7,7 @@ const PresentationSection: React.FC = () => {
   
   return (
     <section>
-      <Row style={{marginBottom: 40, background: isLightMode ? "url('public/danti-bg-black.png')" : "url('public/daniel-bg.png')"}} className="presentation-page">
+      <Row style={{marginBottom: 40, background: isLightMode ? "url('./danti-bg-black.png')" : "url('./daniel-bg.png')"}} className="presentation-page">
         <Col xs={24} style={{display: 'flex', justifyContent: 'center', alignItems: 'end'}}>
           <Typography.Text className="presentation-text">
             {"Desenvolvedor"}

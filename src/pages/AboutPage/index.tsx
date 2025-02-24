@@ -60,7 +60,7 @@ const AboutPage: React.FC = () => {
               </Row>
               <Row justify="center">
                 <Typography.Text className="personal-photo">
-                  <Image preview={false} src="public/mypicture.png"/>
+                  <Image preview={false} src="./mypicture.png"/>
                 </Typography.Text>
               </Row>
             </div>

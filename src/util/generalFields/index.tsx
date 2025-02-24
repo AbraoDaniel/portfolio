@@ -28,9 +28,9 @@ export const specialitiesContent = [
 ]
 
 export const projects = [
-  {title: 'DANTI SHOP', stack: 'FRONTEND', image: 'public/Projects/danti-shop_.png', link: '/danti-shop'},
-  {title: 'DANTI GOALS', stack: 'FRONTEND + BACKEND', image: 'public/Projects/danti-goals.png', link: '/danti-goals'},
-  {title: 'DANTI WALLET', stack: 'FRONTEND + BACKEND', image: 'public/Projects/danti-wallet.png', link: '/danti-wallet'},
+  {title: 'DANTI SHOP', stack: 'FRONTEND', image: './Projects/danti-shop_.png', link: '/danti-shop'},
+  {title: 'DANTI GOALS', stack: 'FRONTEND + BACKEND', image: './Projects/danti-goals.png', link: '/danti-goals'},
+  {title: 'DANTI WALLET', stack: 'FRONTEND + BACKEND', image: './Projects/danti-wallet.png', link: '/danti-wallet'},
 ]
 
 export const mediaContacts = [

@@ -9,7 +9,7 @@
     .about-image {
       position: sticky;
       top: 0;
-      background: url('/public/danti-bg-black.png');
+      background: url('/./danti-bg-black.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: 450px;
@@ -29,7 +29,7 @@
   .about-image {
     position: sticky;
     top: 0;
-    background: url('/public/daniel-bg.png');
+    background: url('/./daniel-bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 450px;

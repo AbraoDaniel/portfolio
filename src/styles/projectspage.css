@@ -307,7 +307,7 @@
     .show-project {
       height: 600px;
       width: 100%;
-      /* background: url('/public/Projects/danti-shop-reduced.png') !important; */
+      /* background: url('/./Projects/danti-shop-reduced.png') !important; */
       background-position: center;
       background-size: cover !important;
       background-repeat: no-repeat !important;
