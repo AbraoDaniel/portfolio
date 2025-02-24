@@ -3,9 +3,11 @@ import { useEffect, useState } from "react"
 import { MdArrowOutward } from "react-icons/md"
 import { mediaContacts } from "../../util/generalFields"
 import ContactMedia from "../ContactPage/ContactMedia"
+import { usePage } from "../../hooks/usePage"
 
 const AboutPage: React.FC = () => {
   const [hovered, setHovered] = useState(false)
+  const { isLightMode } = usePage()
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [])
@@ -14,7 +16,7 @@ const AboutPage: React.FC = () => {
   return (
     <Row style={{width: '100%'}} className="about-wrapper">
       <Col xs={24} xl={8}>
-        <div className="about-image">
+        <div style={{background: isLightMode ? "url('./danti-bg-black.png')" : "url('./daniel-bg.png')"}} className="about-image" >
         </div>
       </Col>
       <Col xs={24} xl={16}>
