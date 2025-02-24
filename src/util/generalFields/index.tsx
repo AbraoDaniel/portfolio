@@ -30,7 +30,7 @@ export const specialitiesContent = [
 export const projects = [
   {title: 'DANTI SHOP', stack: 'FRONTEND', image: 'public/Projects/danti-shop_.png', link: '/danti-shop'},
   {title: 'DANTI GOALS', stack: 'FRONTEND + BACKEND', image: 'public/Projects/danti-goals.png', link: '/danti-goals'},
-  {title: 'DANTI WALLET', stack: 'BACKEND', image: 'public/Projects/danti-wallet.png', link: '/danti-wallet'},
+  {title: 'DANTI WALLET', stack: 'FRONTEND + BACKEND', image: 'public/Projects/danti-wallet.png', link: '/danti-wallet'},
 ]
 
 export const mediaContacts = [
@@ -58,7 +58,7 @@ export const usefullLinks = [
 export const pagesInfo = [
   {key: 'danti-shop', projectName: 'Danti Shop', description: 'Uma experiência de compra fluida, moderna e intuitiva, feita para você.',
     firstInfo: [
-      {title: 'STACK', text: 'FRONTEND + BACKEND'},
+      {title: 'STACK', text: 'FRONTEND'},
       {title: 'PERFORMANCE', text: 'OTIMIZADA'},
       {title: 'DESIGN', text: 'RESPONSIVO'},
       {title: 'GESTÃO', text: 'EFICIENTE'}
@@ -71,7 +71,7 @@ export const pagesInfo = [
   },
   {key: 'danti-goals', projectName: 'Danti Goals', description: 'A ferramenta ideal para organizar, acompanhar e conquistar seus objetivos de forma eficiente e intuitiva.',
     firstInfo: [
-      {title: 'STACK', text: 'FRONTEND'},
+      {title: 'STACK', text: 'FRONTEND + BACKEND'},
       {title: 'PERFORMANCE', text: 'OTIMIZADA'},
       {title: 'DESIGN', text: 'INTUITIVO'},
       {title: 'GESTÃO', text: 'EFICIENTE'}

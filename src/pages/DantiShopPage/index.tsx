@@ -28,7 +28,7 @@ const DantiShopPage: React.FC = () => {
       <Row style={{width: '100%' }} justify="center" gutter={[16,16]}>
         {currentPage?.firstInfo?.map((info) => {
           return (
-            <Col xs={5} >
+            <Col xs={24} lg={5} >
               <div className="project-title-card">
                 <Row style={{width: '100%' }} justify="center">
                   <Typography.Text className="card-title">
@@ -52,7 +52,7 @@ const DantiShopPage: React.FC = () => {
       <Row justify="center" style={{marginTop: 80}} >
         <div className="project-details">
           <Row gutter={[16,16]}>
-            <Col xs={13} style={{display: 'flex', alignItems: 'center'}}>
+            <Col xs={24} lg={13} style={{display: 'flex', alignItems: 'center'}}>
               <div className="project-descrip">
                 <Row>
                   <Typography.Text className="title">
@@ -74,7 +74,7 @@ const DantiShopPage: React.FC = () => {
                 </Row>
               </div>
             </Col>
-            <Col xs={11}>
+            <Col xs={24} lg={11}>
               {currentPage?.cardsInfo?.map((info) => {
                 return (
                   <Card className="details-card">

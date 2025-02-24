@@ -8,8 +8,6 @@
   margin-left: 15px;
   transition: all 1s ease-in-out;
   animation: showing-page 1s linear normal;
-  
-  
 
   .projects-title {
     margin-top: 40px;
@@ -51,7 +49,7 @@
     height: 662px;
     width: 100%;
     background-position: center;
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
 
     border: 1px solid var(--default-border-color);
@@ -262,5 +260,134 @@
 @media screen and (max-width: 600px) {
   .projects-section-page {
     padding: 0;
-  }  
+  }
+
+  .show-product-page {
+    padding: 0 10px;
+    margin-left: 15px;
+    transition: all 1s ease-in-out;
+    animation: showing-page 1s linear normal;
+  
+    .projects-title {
+      margin-top: 40px;
+      font-size: 100px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 200;
+      width: 100%;
+      text-align: center;
+      color: var(--default-text-color);
+    }
+    .projects-subtitle {
+      margin-bottom: 40px;
+      font-size: 18px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 150;
+      width: 100%;
+      text-align: center;
+      color: var(--default-text-color);
+    }
+    .project-title-card {
+      background-color: var(--lighter-default-background-color);
+      border: 1px solid var(--default-border-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+      width: 100%;
+      .card-title {
+        color: var(--default-text-color);
+        font-weight: 200;
+      }
+      .card-description {
+        color: var(--default-text-color);
+        font-weight: 350;
+      }
+    }
+    .show-project {
+      height: 600px;
+      width: 100%;
+      /* background: url('/public/Projects/danti-shop-reduced.png') !important; */
+      background-position: center;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+  
+      border: 1px solid var(--default-border-color);
+      -webkit-filter: brightness(0.9);
+      -moz-filter: brightness(0.3);
+      -o-filter: brightness(0.3);
+      -ms-filter: brightness(0.3);
+    }
+    .project-details {
+      /* background-color: red; */
+      width: 90%;
+      .details-card {
+        padding: 10px;
+        border-radius: 0;
+        margin-bottom: 20px;
+        border-color: var(--default-border-color);
+        background-color: var(--lighter-default-background-color);
+  
+        .card-title {
+          font-size: 20px;
+          font-weight: 300;
+          color: var(--default-text-color);
+          margin-bottom: 5px;
+        }
+        .card-description {
+          font-size: 15px;
+          font-weight: 200;
+          color: var(--default-text-color);
+        }
+      }
+      .project-descrip {
+        width: 90%;
+        .title {
+          color: var(--default-text-color);
+          font-size: 20px;
+          font-weight: 200;
+        }
+        .description {
+          font-size: 35px;
+          color: var(--default-text-color);
+          font-weight: 300;
+        }
+        .redirect {
+          font-size: 20px;
+          font-weight: 250;
+          margin-top: 30px;
+          cursor: pointer;
+          color: var(--default-text-color);
+        }
+        .redirect:hover {
+          font-weight: 400;
+        }
+        .project-redirect-all-button{
+          background-color: var(--default-background-color);
+          border: 1px solid var(--default-border-color);
+          backdrop-filter: blur(15px);
+          border-radius: 25px;
+          width: 30px;
+          margin-right: 10px;
+          height: 30px;
+          padding: 0;
+          transition: transform 0.3s ease-in-out;
+          color: var(--default-text-color);
+          cursor: pointer;
+        }
+        .project-redirect-all-button.hovered{
+          transform: rotate(45deg);
+          background-color: var(--lighter-default-background-color);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1680px){
+  .show-product-page {
+    .show-project {
+      height: 950px;
+    }
+  }
 }

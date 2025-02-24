@@ -23,9 +23,9 @@ const PageHeader: React.FC = () => {
       {openHeaderDrawer && <HeaderDrawer  setOpenHeaderDrawer={setOpenHeaderDrawer} items={pageItems}/>}
       <Header className="reduced-main-header">
         <Row className="header-content">
-          <Col xs={20} className="daniel-name" onClick={() => handleClickToRedirect('/')}>
+          <Col xs={20} className="daniel-name" >
             <MenuOutlined className="menu-icon"onClick={() => setOpenHeaderDrawer(true)}/>
-            <Typography.Text className="name">
+            <Typography.Text className="name" onClick={() => handleClickToRedirect('/')}>
               {'daniel.'}
             </Typography.Text>
           </Col>

@@ -10,6 +10,15 @@ interface IHeaderDrawer {
 }
 const HeaderDrawer: React.FC<IHeaderDrawer> = ({setOpenHeaderDrawer, items}) => {
   const navigate = useNavigate()
+  function handleClickToRedirect(value: string) {
+    if (value !== 'github') {
+      navigate(value)
+      setOpenHeaderDrawer(false)
+      return
+    }
+
+    window.open('https://github.com/AbraoDaniel', '_blank')
+  }
 
   return (
     <Drawer 
@@ -33,8 +42,7 @@ const HeaderDrawer: React.FC<IHeaderDrawer> = ({setOpenHeaderDrawer, items}) => 
         className='header-menu'
         mode="vertical"
         onClick={(value) => {
-          navigate(value?.key)
-          setOpenHeaderDrawer(false)
+          handleClickToRedirect(value?.key)
         }}
         items={items}
       />
