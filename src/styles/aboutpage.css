@@ -239,9 +239,6 @@
         background-color: var(--form-background);
         border: 1px solid var(--default-border-color);
         width: 100%;
-  
-        
-  
         .info {
           padding: 15px 5px;
           display: flex;
@@ -273,6 +270,140 @@
       
       .contact-card:hover {
         background-color: var(--hovered-form-background);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .about-wrapper {
+    padding: 10px 20px;
+    .about-image {
+      animation: floatImageContact-max-600 3s ease-in-out infinite;
+    }
+    .about-content {
+      .name {
+        text-align: center;
+        color: var(--default-text-color);
+        font-size: 130px;
+        font-family: 'Great Vibes', 'Inter', sans-serif;
+        font-weight: 300;
+        margin-top: -120px;
+        margin-bottom: 0;    
+        width: 100%;
+      }
+      .description {
+        text-align: center;
+        font-size: 25px;
+        width: 100%;
+      }
+    }
+    .redirect {
+      color: var(--default-text-color) !important;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 200;
+      .project-redirect-all-button{
+        background-color: var(--default-background-color);
+        border: 1px solid var(--default-border-color) !important;
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        padding: 0;
+        color: var(--default-text-color) !important;
+        transform: rotate(135deg);
+        cursor: pointer;
+        margin-top: 40px;
+        margin-right: 10px;
+      }
+      .project-redirect-all-button.hovered{
+        background-color: var(--lighter-default-background-color) !important;
+      }
+    }
+  
+    .presentation {
+      padding: 20px 20px;
+      .name {
+        margin-top: 10px;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 250;
+        text-align: start;
+      }
+      .sub-text {
+        margin-top: 10px;
+        font-size: 30px;
+      }
+      .main-text {
+        font-size: 18px;
+      }
+      .personal-photo {
+        margin-top: 20px;
+        border: 1px solid var(--default-border-color);
+        justify-content: center;
+        img {
+          width: 300px;
+        }
+      }
+    }
+  
+    .contact-cards {
+      margin-top: 20px;
+      padding: 2px;
+      .contact-card{
+        cursor: pointer;
+        background-color: var(--form-background);
+        border: 1px solid var(--default-border-color);
+        width: 100%;
+        .info {
+          padding: 15px 5px;
+          display: flex;
+          align-items: center;
+          svg {
+            color: var(--default-text-color) !important;
+            width: 25px;
+          }
+          .media-name {
+            font-family: 'Inter', sans-serif;
+            margin-left: 10px;
+            font-weight: 350;
+            font-size: 14px;
+            color: var(--default-text-color);
+          }
+        }
+  
+        .media-arrow {
+          transform: rotate(45deg);
+          transition: all 0.2s ease-in-out;
+          color: var(--default-text-color);
+          margin-right: 5px;
+        }
+  
+        .media-arrow.hovered {
+          transform: rotate(0deg);
+        }
+      }
+      
+      .contact-card:hover {
+        background-color: var(--hovered-form-background);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  .about-wrapper {
+    .about-content {
+      .name {
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .presentation {
+      .name {
+        text-align: start;
       }
     }
   }

@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
             </Col>
             <Col xs={24}>
               <Form.Item label="" name="message" rules={[{required: true, message: 'Por favor, informe a mensagem'}]}>
-                <TextArea showCount maxLength={1500} rows={4} className="textarea-form"/>
+                <TextArea placeholder="Enviar mensagem" showCount maxLength={1500} rows={4} className="textarea-form"/>
               </Form.Item>
             </Col>
             <Col xs={24}>

@@ -173,7 +173,8 @@
     cursor: pointer;
 
     .ant-card-body {
-      padding: 0
+      padding: 0px 20px;
+      width: 100%;
     }
     .product-image {
       width: 100%;
@@ -208,7 +209,6 @@
     }
     
     .project-description {
-      width: 560px;
       height: 60px;
       margin-bottom: 20px;
       padding: 0px 20px;
@@ -274,7 +274,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 380px) {
   .presentation-page {
     background-repeat: no-repeat !important;
     background-size: 400px !important;
@@ -305,8 +305,57 @@
   
   .project-card {
     margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 600px) {
+  .presentation-page {
+    background-repeat: no-repeat !important;
+    background-size: 500px !important;
+    animation: floatBackground-max-600 3s ease-in-out infinite !important;
+  }
+  .presentation-text {
+    font-size: 85px;
+    font-family: 'Great Vibes', sans-serif !important;
+    text-align: center;
+    color: var(--default-text-color);
+    font-weight: 250;
+    margin-top: 390px;
+  }
+  .presentation-subtext {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: var(--default-text-color);
+    white-space: break-spaces;
+    font-weight: 150;
+  }
+  .section-row {
+    padding: 0px !important;
+  }
+  .projects-section {
+    padding: 0px !important;
+  }
+  .project-card {
+    margin-top: 10px;
+    
     .project-description {
-      width: 320px !important;
+      width: 100% !important;
     }
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .presentation-page {
+    background-repeat: no-repeat !important;
+    background-size: 900px !important;
+  }
+  .presentation-text {
+    font-size: 250px;
+    font-family: 'Great Vibes', sans-serif !important;
+    text-align: center;
+    color: var(--default-text-color);
+    font-weight: 250;
+    margin-top: 800px;
   }
 }

@@ -164,7 +164,8 @@
     cursor: pointer;
 
     .ant-card-body {
-      padding: 0
+      padding: 0px 20px;
+      width: 100%;
     }
     .product-image {
       width: 100%;
@@ -199,7 +200,6 @@
     }
     
     .project-description {
-      width: 560px;
       height: 60px;
       margin-bottom: 20px;
       padding: 0px 20px;
