@@ -46,7 +46,7 @@ const DantiShopPage: React.FC = () => {
         })}
       </Row>
       <Row justify="center" style={{marginTop: 80}} >
-        <div className="show-project" style={{background: `url('/portfolio/Projects/danti-shop_.png')`}}>
+        <div className="show-project" style={{background: `url('/Projects/danti-shop_.png')`}}>
         </div>
       </Row>
       <Row justify="center" style={{marginTop: 80}} >

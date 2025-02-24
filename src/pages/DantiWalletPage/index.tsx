@@ -46,7 +46,7 @@ const DantiWalletPage: React.FC = () => {
         })}
       </Row>
       <Row justify="center" style={{marginTop: 80}} >
-        <div className="show-project" style={{background: `url(/portfolio/Projects/danti-wallet.png)`}}>
+        <div className="show-project" style={{background: `url(/Projects/danti-wallet.png)`}}>
         </div>
       </Row>
       <Row justify="center" style={{marginTop: 80}} >
