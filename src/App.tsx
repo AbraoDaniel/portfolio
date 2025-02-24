@@ -9,7 +9,7 @@ const { Content } = Layout;
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/portfolio/">
       <PageProvider>
         <Layout className="page-layout">
           <PageHeader />
