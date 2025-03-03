@@ -1,4 +1,4 @@
-import { CssIcon, HtmlIcon, PostgresIcon, ReactIcon, RubyIcon, TailwindIcon, TypescriptIcon } from "../icons/languagesIcons"
+import { CssIcon, HtmlIcon, NextJsIcon, PostgresIcon, ReactIcon, RubyIcon, TailwindIcon, TypescriptIcon } from "../icons/languagesIcons"
 
 const InfiniteSlider: React.FC = () => {
   return (
@@ -12,6 +12,9 @@ const InfiniteSlider: React.FC = () => {
               </div>
               <div className="slide">
                 <TypescriptIcon />
+              </div>
+              <div className="slide">
+                <NextJsIcon />
               </div>
               <div className="slide">
                 <CssIcon />

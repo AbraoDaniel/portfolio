@@ -12,11 +12,11 @@ const DantiShopPage: React.FC = () => {
   }, [])
 
   function handleClickSeeRepository() {
-    window.open('https://github.com/AbraoDaniel/e-commerce', '_blank')
+    window.open('https://abraodaniel.github.io/e-commerce/', '_blank')
   }
 
   return (
-    <section className={`show-product-page`}>
+    <section className="show-product-page">
       <Row  style={{width: '100%', display: 'flex', alignItems: 'center'}} justify="center">
         <Typography.Text className="projects-title">
           {'Danti Shop'}
@@ -26,9 +26,9 @@ const DantiShopPage: React.FC = () => {
         </Typography.Text>
       </Row>
       <Row style={{width: '100%' }} justify="center" gutter={[16,16]}>
-        {currentPage?.firstInfo?.map((info) => {
+        {currentPage?.firstInfo?.map((info, index) => {
           return (
-            <Col xs={24} lg={5} >
+            <Col key={`${info?.title}_${index}`} xs={24} lg={5} >
               <div className="project-title-card">
                 <Row style={{width: '100%' }} justify="center">
                   <Typography.Text className="card-title">
@@ -69,15 +69,15 @@ const DantiShopPage: React.FC = () => {
                     <Button className={`project-redirect-all-button ${hovered ? 'hovered' : ''}`}>
                       <MdArrowOutward />
                     </Button>
-                    {"Acessar repositório"}
+                    {"Acessar aplicação"}
                   </Typography.Text>
                 </Row>
               </div>
             </Col>
             <Col xs={24} lg={11}>
-              {currentPage?.cardsInfo?.map((info) => {
+              {currentPage?.cardsInfo?.map((info, index) => {
                 return (
-                  <Card className="details-card">
+                  <Card key={`${info?.title}_${index}`} className="details-card">
                     <Row>
                       <Typography.Text className="card-title">
                         {info?.title}
