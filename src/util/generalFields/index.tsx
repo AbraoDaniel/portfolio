@@ -2,6 +2,7 @@ import { GitHubIcon, GmailIcon, LinkedinIcon, OutlookIcon, WhatsappIcon } from "
 import AboutPage from "../../pages/AboutPage";
 import ContactPage from "../../pages/ContactPage";
 import DantiGoalsPage from "../../pages/DantiGoalsPage";
+import DantiRestaurantMenuPage from "../../pages/DantiRestaurantMenuPage";
 import DantiShopPage from "../../pages/DantiShopPage";
 import DantiWalletPage from "../../pages/DantiWalletPage";
 import HomePage from "../../pages/HomePage";
@@ -17,7 +18,8 @@ export const routePathsAndElements: any = [
   {path: '/work', element: <WorkPage />},
   {path: '/projects/danti-shop', element: <DantiShopPage />},
   {path: '/projects/danti-goals', element: <DantiGoalsPage />},
-  {path: '/projects/danti-wallet', element: <DantiWalletPage />}
+  {path: '/projects/danti-wallet', element: <DantiWalletPage />},
+  {path: '/projects/danti-restaurant-menu', element: <DantiRestaurantMenuPage />},
 ]
 
 
@@ -31,6 +33,7 @@ export const projects = [
   {title: 'DANTI SHOP', stack: 'FRONTEND', image: './Projects/danti-shop_.png', link: '/danti-shop'},
   {title: 'DANTI GOALS', stack: 'FRONTEND + BACKEND', image: './Projects/danti-goals.png', link: '/danti-goals'},
   {title: 'DANTI WALLET', stack: 'FRONTEND + BACKEND', image: './Projects/danti-wallet.png', link: '/danti-wallet'},
+  {title: 'DANTI RESTAURANT MENU', stack: 'FRONTEND', image: './Projects/danti-menu.png', link: '/danti-restaurant-menu'},
 ]
 
 export const mediaContacts = [
@@ -93,6 +96,19 @@ export const pagesInfo = [
       {title: 'Controle de Gastos', description: 'Organize suas despesas e receitas em um só lugar, categorizando transações e monitorando seu orçamento com facilidade.'},
       {title: 'Processos Inteligentes', description: 'Automação na organização das finanças, garantindo maior segurança e precisão na gestão dos dados.'},
       {title: 'Linguagens', description: 'Desenvolvido com Ruby on Rails e PostgreSQL, proporcionando uma aplicação robusta, escalável e confiável.'}
+    ]
+  },
+  {key: 'danti-restaurant-menu', projectName: 'Danti Restaurant Menu', description: 'Uma solução moderna e eficiente para digitalizar o cardápio de restaurantes, proporcionando praticidade e uma experiência intuitiva para os clientes.',
+    firstInfo: [
+      {title: 'STACK', text: 'FRONTEND'},
+      {title: 'PERFORMANCE', text: 'ESCALÁVEL'},
+      {title: 'DESIGN', text: 'INTUITIVO'},
+      {title: 'GESTÃO', text: 'EFICIENTE'}
+    ],
+    cardsInfo: [
+      {title: 'Facilidade e Praticidade', description: 'Com uma interface intuitiva e moderna, o projeto visa digitalizar menus de restaurantes, permitindo que clientes acessem informações sobre pratos, preços e promoções diretamente de seus dispositivos.'},
+      {title: 'Processos Inteligentes', description: 'Desenvolvido utilizando Nextjs, com princípios de SSR, garantindo um carregamento rápido e uma experiência fluida para os usuários, com foco na usabilidade e acessibilidade.'},
+      {title: 'Linguagens', description: 'O projeto foi desenvolvido utilizando ReactJS, TypeScript, Nextjs e com integração com Firebase e Supabase, garantindo uma aplicação escalável e robusta.'}
     ]
   }
 ]
